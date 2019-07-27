@@ -1,0 +1,576 @@
+<!doctype html>
+<html class="no-js h-100" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shards Dashboard Lite - Free Bootstrap Admin Template – DesignRevision</title>
+    <meta name="description" content="A high-quality &amp; free Bootstrap admin dashboard template pack that comes with lots of templates and components.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="http://127.0.0.1:8000/static/css/main_analyze_profile_pages/shards-dashboards.1.1.0.min.css">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/static/css/main_analyze_profile_pages/styles/extras.1.1.0.min.css">
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="http://127.0.0.1:8000/static/js/main_analyze_profile_pages/echarts.min.js"></script>
+  </head>
+  <body class="h-100">
+        <!-- Main Sidebar -->
+        <aside class="main-sidebar col-12 col-md-3 col-lg-2 px-0">
+          <div class="main-navbar">
+            <nav class="navbar align-items-stretch navbar-light bg-white flex-md-nowrap border-bottom p-0">
+              <a class="navbar-brand w-100 mr-0" href="#" style="line-height: 25px;">
+                <div class="d-table m-auto">
+                  <img id="main-logo" class="d-inline-block align-top mr-1" style="max-width: 25px;" src="http://127.0.0.1:8000/static/images/main_analyze_profile_pages/shards-dashboards-logo.svg" alt="Shards Dashboard">
+                  <span class="d-none d-md-inline ml-1">“智慧班主任”平台</span>
+                </div>
+              </a>
+              <a class="toggle-sidebar d-sm-inline d-md-none d-lg-none">
+                <i class="material-icons">&#xE5C4;</i>
+              </a>
+            </nav>
+          </div>
+          <form action="#" class="main-sidebar__search w-100 border-right d-sm-flex d-md-none d-lg-none">
+            <div class="input-group input-group-seamless ml-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+              <input class="navbar-search form-control" type="text" placeholder="搜索..." aria-label="Search"> </div>
+          </form>
+          <div class="nav-wrapper">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">
+                  <i class="material-icons">edit</i>
+                  <span>班级整体分析</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="http://127.0.0.1:8000/students_profile">
+                  <i class="material-icons">vertical_split</i>
+                  <span>学生个体分析</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- End Main Sidebar -->
+        <main class="main-content col-lg-10 col-md-9 col-sm-12 p-0 offset-lg-2 offset-md-3">
+          <div class="main-navbar sticky-top bg-white">
+            <!-- Main Navbar -->
+            <nav class="navbar align-items-stretch navbar-light flex-md-nowrap p-0">
+              <form action="#" class="main-navbar__search w-100 d-none d-md-flex d-lg-flex">
+                <div class="input-group input-group-seamless ml-3">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="fas fa-search"></i>
+                    </div>
+                  </div>
+                  <input class="navbar-search form-control" type="text" placeholder="搜索" aria-label="Search"> </div>
+              </form>
+              <ul class="navbar-nav border-left flex-row ">
+                <li class="nav-item border-right dropdown notifications">
+                  <a class="nav-link nav-link-icon text-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="nav-link-icon__wrapper">
+                      <i class="material-icons">&#xE7F4;</i>
+                      <span class="badge badge-pill badge-danger">2</span>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-small" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">
+                      <div class="notification__icon-wrapper">
+                        <div class="notification__icon">
+                          <i class="material-icons">&#xE6E1;</i>
+                        </div>
+                      </div>
+                      <div class="notification__content">
+                        <span class="notification__category">Analytics</span>
+                        <p>Your website’s active users count increased by
+                          <span class="text-success text-semibold">28%</span> in the last week. Great job!</p>
+                      </div>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <div class="notification__icon-wrapper">
+                        <div class="notification__icon">
+                          <i class="material-icons">&#xE8D1;</i>
+                        </div>
+                      </div>
+                      <div class="notification__content">
+                        <span class="notification__category">Sales</span>
+                        <p>Last week your store’s sales count decreased by
+                          <span class="text-danger text-semibold">5.52%</span>. It could have been worse!</p>
+                      </div>
+                    </a>
+                    <a class="dropdown-item notification__all text-center" href="#"> View all Notifications </a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-nowrap px-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img class="user-avatar rounded-circle mr-2" src="http://127.0.0.1:8000/static/images/main_analyze_profile_pages/avatars/0.jpg" alt="User Avatar">
+                    <span class="d-none d-md-inline-block">丹妮老师</span>
+                  </a>
+
+                </li>
+              </ul>
+              <nav class="nav">
+                <a href="#" class="nav-link nav-link-icon toggle-sidebar d-md-inline d-lg-none text-center border-left" data-toggle="collapse" data-target=".header-navbar" aria-expanded="false" aria-controls="header-navbar">
+                  <i class="material-icons">&#xE5D2;</i>
+                </a>
+              </nav>
+            </nav>
+          </div>
+          <!-- / .main-navbar -->
+          <div class="main-content-container container-fluid px-4">
+            
+	  
+<!-- Page Header -->
+            <div class="page-header row no-gutters py-4">
+              <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <span class="text-uppercase page-subtitle">-智慧班主任-</span>
+                <h3 class="page-title">教学数据概况</h3>
+              </div>
+            </div>
+<!-- End Page Header -->
+
+<!-- Small Stats Blocks -->
+            <div class="row">
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase"><font size="3.5">班级数目</font></span>
+                        <h6 class="stats-small__value count my-3">9</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-1"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-6 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase"><font size="3.5">学生数目</font></span>
+                        <h6 class="stats-small__value count my-3">90</h6>
+                      </div>
+                      <div class="stats-small__data">
+                        
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-2"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase"><font size="3.5">学科数目</font></span>
+                        <h6 class="stats-small__value count my-3">3</h6>
+                      </div>
+                      <div class="stats-small__data">
+                       
+                      </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-3"></canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg col-md-4 col-sm-6 mb-4">
+                <div class="stats-small stats-small--1 card card-small">
+                  <div class="card-body p-0 d-flex">
+                    <div class="d-flex flex-column m-auto">
+                      <div class="stats-small__data text-center">
+                        <span class="stats-small__label text-uppercase"><font size="3.5">考试数目</font></span>
+                        <h6 class="stats-small__value count my-3">3</h6>
+                      </div>
+                      <div class="stats-small__data">
+                                              </div>
+                    </div>
+                    <canvas height="120" class="blog-overview-stats-small-4"></canvas>
+                  </div>
+                </div>
+              </div>
+<!-- End Small Stats Blocks -->
+
+
+<!-- Selection Block -->
+                  <div class="card-body pt-0">
+                    <div class="row border-bottom py-2 bg-light">
+         		<div class="main-content-container container-fluid px-4">
+		
+<form action="" method="get">
+	<table>
+	<tr>
+	<td>
+	<h2><font size="5.5">选择考试科目：</font></h2>
+	<select name="drop2" class="ui-select">
+					<option value="0">语文</option>
+					<option value="1">数学</option>
+					<option value="2">英语</option>
+	</select>
+	</td>	
+	
+	<td>
+	<h2><font size="5.5">选择年级班级：</font></h2>
+	<select name="drop3" class="ui-select">
+					<option value="0">初一1班</option>
+					<option value="1">初一2班</option>
+					<option value="2">初一3班</option>
+					<option value="2">初二1班</option>
+					<option value="2">初二2班</option>
+					<option value="2">初二3班</option>
+					<option value="2">初三1班</option>
+					<option value="2">初三2班</option>
+					<option value="2">初三3班</option>
+	</select>
+	</td>
+	<td>
+	<h2><font size="5.5">选择考试时间：</font></h2>
+	<select name="drop1" class="ui-select" index=40px>
+					<option value="0">2019春季学期入学考试</option>
+					<option value="1">2019春季学期期中测试</option>
+					<option value="2">2019春季学期期末测试</option>		</select>
+	</td>
+
+	<td>
+				<input type="submit" value="确定" />
+	</td></tr></table></form></div></div>
+<!-- End Selection Block -->
+
+
+<!-- Grades Statistics Table -->
+	<!-- Page Header -->
+            <div class="page-header row no-gutters py-4">
+              <div class="col-12 col-sm-4 text-center text-sm-left mb-0">
+                <span class="text-uppercase page-subtitle">-智慧班主任-</span>
+                <h3 class="page-title">班级与年级成绩的统计分析</h3>
+              </div>
+            </div>
+	<!-- End Page Header -->
+	<!-- Default Light Table -->
+            <div class="row">
+              <div class="col">
+                <div class="card card-small mb-4">
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">xxx班级xxx考试xx科目</h6>
+                  </div>
+                  <div class="card-body p-0 pb-3 text-center">
+                    <table class="table mb-0">
+                      <thead class="bg-light">
+                        <tr>
+                          <th scope="col" class="border-0"> </th>
+                          <th scope="col" class="border-0">听力</th>
+                          <th scope="col" class="border-0">完形填空</th>
+                          <th scope="col" class="border-0">阅读理解</th>
+                          <th scope="col" class="border-0">写作</th>
+                          <th scope="col" class="border-0">总分</th>
+			  <th scope="col" class="border-0">备注</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>班级 - 平均分 (例)</td>
+                          <td> 23</td>
+                          <td> 35</td>
+                          <td> 12</td>
+                          <td>22 </td>
+                          <td> 92</td>
+                          <td> </td>
+                        </tr>
+                        <tr>
+                          <td>班级 - 最高分</td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                        </tr>
+                        <tr>
+                          <td>班级 - 中位数</td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                        </tr>
+                        <tr>
+                          <td>班级 - 最低分</td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                        </tr>
+          		<tr>
+                          <td>年级 - 平均分</td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                        </tr>
+          		<tr>
+                          <td>年级 - 最高分</td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                        </tr>
+			<tr>
+                          <td>年级 - 中位数</td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                        </tr>
+			<tr>
+                          <td>年级 - 中位数</td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                          <td> </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+<!-- End Grades Statistics Table -->
+
+
+
+<!-- Grades Plot -->
+            <div class="row">
+	     <!-- Users Stats -->
+              <div class="col-lg-13 col-md-12 col-sm-12 mb-4">
+                <div class="card card-small">
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">班级学生该科目分数分布图</h6>
+                  </div>
+                  <div class="card-body pt-0">
+                    <div class="row border-bottom py-2 bg-light">
+                      <div class="col-12 col-sm-6">
+                        
+    <div id="main3" style="width: 1000px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart3 = echarts.init(document.getElementById('main3'));
+
+        // 指定图表的配置项和数据
+        var option = {
+    xAxis: {
+        type: 'category',
+        data: ['0-30分', '30-60分', '60-90分', '90-120分','120-150分']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [2, 4, 5, 3, 0],
+        type: 'line',
+        smooth: true
+    }]
+};
+        myChart3.setOption(option);
+    </script> </div></div></div></div></div>
+<!-- End Grades Plot-->
+
+
+
+<!-- Histogram -->
+             <div class="col-lg-7 col-md-12 col-sm-12 mb-4">
+                <div class="card card-small">
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">班级与年级成绩可视化对比</h6>
+                  </div>
+                  <div class="card-footer border-top">
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        var option = {
+        tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['班级平均分','年级平均分']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            data : ['听力','完形填空','阅读理解','写作','总分']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'班级平均分',
+            type:'bar',
+            data:[15.0, 14.9, 27.0, 13.2, 71.6],
+                    },
+        {
+            name:'年级平均分',
+            type:'bar',
+            data:[12.6, 15.9, 29.0, 16.4, 68.7],
+            
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script> </div></div></div>
+
+<!-- End Histogram-->
+
+
+<!-- Radar Map -->
+              <div class="col-lg-5 col-md-6 col-sm-12 mb-4">
+                <div class="card card-small h-100">
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">雷达分析</h6>
+                  </div>
+    <div id="main2" style="width:390px; height:400px; left:30px;top:20px"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart2 = echarts.init(document.getElementById('main2'));
+        // 指定图表的配置项和数据
+        var option = {
+    tooltip: {},
+    legend: {
+        data: ['班级平均', '年级平均']
+    },
+    radar: {
+        // shape: 'circle',
+        name: {
+            textStyle: {
+                color: '#fff',
+                backgroundColor: '#999',
+                borderRadius: 3,
+                padding: [3, 5]
+           }
+        },
+        indicator: [
+           { name: '听力', max: 50},
+           { name: '完形填空', max: 50},
+           { name: '阅读理解', max: 50},
+           { name: '作文', max: 50},
+           { name: '总分', max: 150}
+        ]
+    },
+    series: [{
+        name: '班级 vs 年级',
+        type: 'radar',
+        // areaStyle: {normal: {}},
+        data : [
+            {
+                value : [25.0, 24.9, 27.0, 23.2, 91.6],
+                name : '班级平均'
+            },
+             {
+                value : [22.6, 25.9, 29.0, 26.4, 98.7],
+                name : '年级平均'
+            }
+        ]
+    }]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart2.setOption(option);
+    </script> 
+                    </div>
+                  </div>
+                </div>
+              </div>          
+<!-- End Radar Map -->
+
+
+<!-- Teaching Advice -->
+              <div class="col-lg-13 col-md-12 col-sm-12 mb-4">
+                <div class="card card-small blog-comments">
+                  <div class="card-header border-bottom">
+                    <h6 class="m-0">智能教学建议</h6>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="blog-comments__item d-flex p-3">
+                      <div class="blog-comments__avatar mr-3">
+                        <img src="http://127.0.0.1:8000/static/images/main_analyze_profile_pages/avatars/1.jpg" alt="User avatar" /> </div>
+                      <div class="blog-comments__content">
+                        <div class="blog-comments__meta text-muted">
+                          <a class="text-secondary" href="#">建议一：</a>
+                        </div>
+                        <p class="m-0 my-1 mb-2 text-muted">本班xxx科目平均分高／低／等于年级平均分。</p>
+                                             </div>
+                    </div>
+                    <div class="blog-comments__item d-flex p-3">
+                      <div class="blog-comments__avatar mr-3">
+                        <img src="http://127.0.0.1:8000/static/images/main_analyze_profile_pages/avatars/2.jpg" alt="User avatar" /> </div>
+                      <div class="blog-comments__content">
+                        <div class="blog-comments__meta text-muted">
+                          <a class="text-secondary" href="#">建议二：</a>
+                        </div>
+                        <p class="m-0 my-1 mb-2 text-muted">最好的模块为：xxx, 最差的模块为：xxx。</p>
+                                             </div>
+                    </div>
+                    <div class="blog-comments__item d-flex p-3">
+                      <div class="blog-comments__avatar mr-3">
+                        <img src="http://127.0.0.1:8000/static/images/main_analyze_profile_pages/avatars/3.jpg" alt="User avatar" /> </div>
+                      <div class="blog-comments__content">
+                        <div class="blog-comments__meta text-muted">
+                          <a class="text-secondary" href="#">建议三：</a>
+                        </div>
+                        <p class="m-0 my-1 mb-2 text-muted">需要重点关注：xxx模块和xxx同学。</p>
+                                              </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- End Teaching Advice -->
+              
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sharrre/2.0.1/jquery.sharrre.min.js"></script>
+    <script src="scripts/extras.1.1.0.min.js"></script>
+    <script src="scripts/shards-dashboards.1.1.0.min.js"></script>
+    <script src="scripts/app/app-blog-overview.1.1.0.js"></script>
+  </body>
+</html>
