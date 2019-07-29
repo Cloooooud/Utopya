@@ -83,6 +83,9 @@ DATABASES = {
         'PASSWORD': 'Qq475149224.',
         'HOST': 'utopya-ancient.database.windows.net',
         'PORT': '',
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server',
+        },
     },
 
 }
