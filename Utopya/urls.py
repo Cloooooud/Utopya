@@ -18,8 +18,11 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls import url
 from . import view
 from django.urls import path
+from django.contrib import admin
  
+
 urlpatterns = [
+    url(r'^admin/', admin.site.urls),
     url(r'^$', view.hello),
     path('teacher_login/', view.teacher_login),
     path('select_page/', view.select_page),

@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Model'
 ]
 
 MIDDLEWARE = [
@@ -76,9 +77,14 @@ WSGI_APPLICATION = 'Utopya.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'Utopya_Base',
+        'USER': 'Junxiandalaooo@utopya-ancient',
+        'PASSWORD': 'Qq475149224.',
+        'HOST': 'utopya-ancient.database.windows.net',
+        'PORT': '',
+    },
+
 }
 
 
